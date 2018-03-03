@@ -86,7 +86,6 @@ return htmlt;
 var counter=1;
 app.get('/counters',function(req,res){
     counter++;
-    
     res.send(counter.toString());
 });
 
