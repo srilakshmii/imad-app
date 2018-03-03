@@ -14,7 +14,8 @@ a.onclick =function()
            }
        }
    }
-   
+   request.open('GET','http://u610sssg.imad.hasura-app.io/counters',true);
+   request.send(null);
    
    
 }
