@@ -87,7 +87,7 @@ var counter=1;
 app.get('/counter',function(req,res){
     counter++;
     
-    res.send(counter.ToString());
+    res.send(counter.toString());
 });
 
 app.get('/', function (req, res) {
