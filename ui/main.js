@@ -1,10 +1,21 @@
 var a=document.getElementById("counter");
-var counter=0;
+
 a.onclick =function()
 {
-   counter=counter+1;
-   var b=document.getElementById("count");
-   b.innerHTML=counter.toString();
+   
+   var request=new XMLHttpRequest();
+   request.onreadystatechange=function(){
+       if (request.readyState== XMLHttpRequest.Done){
+           if(request.status==200)
+           {
+               var counter=request.responseText;
+               var b=document.getElementById("count");
+               b.innerHTML=counter.toString();
+           }
+       }
+   }
+   
+   
    
 }
 
