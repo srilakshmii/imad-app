@@ -84,7 +84,7 @@ var htmlt=`
 return htmlt;
 }
 var counter=1;
-app.get('/counter',function(req,res){
+app.get('/counters',function(req,res){
     counter++;
     
     res.send(counter.toString());
