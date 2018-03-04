@@ -23,18 +23,19 @@ a.onclick =function()
 };
 
 
-var nme=document.getElementById("name");
+var nme=document.getElementById('name');
 var name=nme.value;
-var submit=document.getElementById("submit_btn");
-submit.onclick=function(){
+var submit=document.getElementById('submit_btn');
+submit.onclick=function()
+{
    var names=['var1','var2','var3'];
    var list='';
-   for(var i=0;i<=list.length;i++)
+   for(var i=0;i<names.length;i++)
    {
        list+='<li>'+names[i]+'</li>';
        
    }
-   var ul=document.getElementById("ul");
+   var ul=document.getElementById('ul');
    ul.innerHTML=list;
    
     
