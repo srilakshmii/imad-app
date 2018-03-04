@@ -97,12 +97,19 @@ app.get('/third',function(req,res){
     res.sendFile(path.join(__dirname, 'ui','third.html'));
 });
 
+var names[];
+app.get('/submit-name',function(req,res){
+   var name=req.query.name;
+   names.push;
+   res.send(JSON.stringify(names));
+});
+
+
 app.get('/:articleName',function(req,res){
     
     articleName=req.params.articleName;
     res.send(create(article[articleName]));
 });
-
 
 
 
